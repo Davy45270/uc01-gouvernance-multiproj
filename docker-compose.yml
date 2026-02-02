@@ -1,0 +1,5 @@
+version: "3.8"
+services:
+  app:
+    image: alpine:latest
+    command: ["sh", "-lc", "echo TODO: replace with service for this use case; sleep 3600"]
