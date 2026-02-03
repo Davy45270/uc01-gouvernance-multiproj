@@ -10,3 +10,10 @@ services:
       - PORT=3000
     ports:
       - "13101:3000"
+
+  uc01-ui:
+    image: nginx:alpine
+    volumes:
+      - ./services/uc01-ui/public:/usr/share/nginx/html:ro
+    ports:
+      - "13100:80"
