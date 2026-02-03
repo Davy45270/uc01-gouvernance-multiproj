@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UC01 — Gouvernance multi-projets</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="top">
+      <h1>UC01 — Portefeuille & Scoring</h1>
+      <div class="status" id="status">API: ?</div>
+    </header>
+
+    <main class="grid">
+      <section class="card">
+        <h2>Créer une initiative</h2>
+        <form id="initForm">
+          <label>Titre<input name="title" required /></label>
+          <label>Description<textarea name="description"></textarea></label>
+          <div class="row">
+            <label>Valeur<input type="number" name="value" min="0" max="10" value="5" /></label>
+            <label>Risque<input type="number" name="risk" min="0" max="10" value="3" /></label>
+            <label>Opportunité<input type="number" name="opportunity" min="0" max="10" value="4" /></label>
+            <label>Effort<input type="number" name="effort" min="1" max="10" value="3" /></label>
+          </div>
+          <button type="submit">Créer</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Liste des initiatives (tri WSJF)</h2>
+        <button id="refreshBtn">Rafraîchir</button>
+        <div id="list" class="list"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
