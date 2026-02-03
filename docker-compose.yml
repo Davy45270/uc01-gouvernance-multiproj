@@ -1,5 +1,12 @@
-version: "3.8"
+version: '3.8'
 services:
-  app:
-    image: alpine:latest
-    command: ["sh", "-lc", "echo TODO: replace with service for this use case; sleep 3600"]
+  uc01-api:
+    image: node:22-alpine
+    working_dir: /app
+    volumes:
+      - ./services/uc01-api:/app
+    command: ["node", "src/index.js"]
+    environment:
+      - PORT=3000
+    ports:
+      - "13101:3000"
