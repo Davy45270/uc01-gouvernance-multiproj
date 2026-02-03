@@ -1,4 +1,3 @@
-version: '3.8'
 services:
   uc01-api:
     image: node:22-alpine
