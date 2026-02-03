@@ -6,6 +6,8 @@
 - Secrets dans vault (OpenBao)
 
 ## Interdits
+- UI non responsive
+- Composants UI obsolètes/non maintenus
 - Architecture monolithique non justifiée
 - Échanges stateful entre services
 - UI multi-page (hors dérogation)

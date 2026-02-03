@@ -12,3 +12,7 @@
 ## Documentation obligatoire
 - Le **code doit être documenté** (comments/README technique)
 - La **documentation fonctionnelle** est obligatoire pour chaque module/feature
+
+## Composants
+- Utiliser des composants **stables** et **maintenus**
+- Interdire les composants obsolètes ou non maintenus
